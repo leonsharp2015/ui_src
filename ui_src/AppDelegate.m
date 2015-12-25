@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  ui_src
+//  UILession9_uitable
 //
-//  Created by lanou3g on 15/12/25.
+//  Created by lanou3g on 15/12/24.
 //  Copyright © 2015年 lanou3g. All rights reserved.
 //
 
 #import "AppDelegate.h"
-
+#import "RootViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window=[[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor=[UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    RootViewController *rootVC=[[RootViewController alloc] init];
+    
+    UINavigationController *naC=[[UINavigationController alloc] initWithRootViewController:rootVC];
+    naC.navigationBar.translucent=NO;
+    
+    self.window.rootViewController=naC;
     return YES;
 }
 

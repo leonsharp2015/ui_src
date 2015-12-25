@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  ui_src
+//  UILession9_uitable
 //
-//  Created by lanou3g on 15/12/25.
+//  Created by lanou3g on 15/12/24.
 //  Copyright © 2015年 lanou3g. All rights reserved.
 //
 
